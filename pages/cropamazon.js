@@ -1,8 +1,19 @@
 import React from 'react'
+import GoogleFixedads from '../components/GoogleFixedads'
 
 export default function cropamazon() {
-  return (
-    <div>
+    return (
+        <div>
+            <div className="fixed-ad">
+                <GoogleFixedads
+                    slot="234578578"
+                    style={{
+                        display: 'inline-block',
+                        width: '300px',
+                        height: '250px'
+                    }}
+                />
+            </div>
             <section
                 className="relative z-10 mx-auto mt-20 max-w-3xl px-4 pb-32 sm:px-6 lg:px-8"
                 aria-labelledby="contact-heading"
@@ -57,5 +68,5 @@ export default function cropamazon() {
                 </div>
             </section>
         </div>
-  )
+    )
 }
