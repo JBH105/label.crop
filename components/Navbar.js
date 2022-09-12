@@ -19,7 +19,7 @@ export default function Example({ children }) {
                                 <div className="flex justify-between w-full">
                                     <div className="flex flex-shrink-0 items-center">
                                         <div className='text-xl italic'>
-                                            <span className='block h-8 leading-2 w-auto font-sans text-4xl'>Shipping<span className='text-[#50d71e]'>label</span>crop</span>
+                                            <span className='block h-8 leading-2 w-auto font-sans text-2xl lg:text-4xl md:text-4xl'>Shipping<span className='text-[#50d71e]'>label</span>crop</span>
                                         </div>
                                     </div>
                                     <div className="hidden items-center sm:ml-6 sm:flex sm:space-x-8">
