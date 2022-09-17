@@ -1,6 +1,10 @@
 import React from 'react'
 
 export default function cropmeesho() {
+
+    const handlelabel = (e)=>{
+console.log(e.target.value);
+    }
     return (
         <div>
             <section
@@ -20,7 +24,7 @@ export default function cropmeesho() {
                                 <img src='asset/Meesho.png' className="h-8 w-8 text-white" aria-hidden="true" />
                             </div>
                             <div className='ml-6'>
-                                <input type="file" />
+                                <input type="file" onChange={(e)=>handlelabel(e)} />
                             </div>
 
                         </div>

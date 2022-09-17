@@ -10,7 +10,7 @@ class GoogleFixedads extends Component {
         return (
                 <ins className="adsbygoogle"
                     style={this.props.style}
-                    data-ad-client="pub-2451180821646832"
+                    data-ad-client="ca-pub-2451180821646832"
                 >
                 </ins>
         );
