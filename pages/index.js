@@ -23,6 +23,30 @@ const supportLinks = [
     icon: 'asset/amazon.png',
   },
 ]
+
+const support = [
+  {
+    name: 'Whatsapp-9040150016',
+    href: '/cropflipkart',
+    description:
+      'Fast easy and automatic tool to prepare Flipkart shipping labels in just one click.',
+    icon: 'asset/57e49e7b-e7bb-476f-b6d0-8c2f0da337d5.jpeg',
+  },
+  {
+    name: 'Whatsapp-8486645257',
+    href: '/cropmeesho',
+    description:
+      'Fast easy and automatic tool to prepare meesho shipping labels in just one click.',
+    icon: 'asset/6ede32bc-3d59-4fba-a3ed-0dab891eb7f8.jpeg',
+  },
+  {
+    name: 'Whatsapp-814445241',
+    href: '/cropamazon',
+    description:
+      'We are working on a fast easy and automatic tool to prepare amazon shipping labels which does the job in just one click.',
+    icon: 'asset/f1ac05fb-ce24-4d75-af59-17c625348d7f (1).jpeg',
+  },
+]
 export default function Home() {
   return (
     <div>
@@ -71,6 +95,26 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          <div className="mt-[80px] grid grid-cols-1 gap-y-20 lg:grid-cols-3 lg:gap-y-0 lg:gap-x-8">
+            {support.map((link) => (
+              <div key={link.name} className="flex flex-col rounded-2xl bg-white shadow-xl">
+                <div className="relative flex-1 px-6 pt-16 pb-8 md:px-8">
+                  <div className="absolute top-0 inline-block -translate-y-1/2 transform rounded-xl  p-5 shadow-lg">
+                    <img src={link.icon} className="h-16 w-16 text-white" aria-hidden="true" />
+                  </div>
+                  <h3 className="text-xl font-medium text-gray-900">{link.name}</h3>
+                  <p className="mt-4 text-base text-gray-500">{link.description}</p>
+                </div>
+                <div className="rounded-bl-2xl rounded-br-2xl bg-gray-50 p-6 md:px-8">
+                  <a href={link.href} className="text-base font-medium text-indigo-700 hover:text-indigo-600">
+                    Crop Shipping Label<span aria-hidden="true"> &rarr;</span>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+
         </section>
       </div>
 
